@@ -22,8 +22,7 @@
     },
     "activationEvents": [
         "onCommand:xz.showReminderView",
-        "onCommand:xz.setReminderView",
-        "*"
+        "onCommand:xz.setReminderView"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -60,7 +59,7 @@
     },
     "devDependencies": {
         "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
+        "vscode": "^1.1.37",
         "tslint": "^5.8.0",
         "@types/node": "^8.10.25",
         "@types/mocha": "^2.2.42"
