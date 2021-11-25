@@ -5,11 +5,11 @@ import * as path from 'path';
 export class ReminderView {
     private static panel: vscode.WebviewPanel | undefined;
 
-    public static show(context: vscode.ExtensionContext, imageName='cxk.gif') {
+    public static show(context: vscode.ExtensionContext, imageName='0.gif') {
         if (this.panel) {
             this.panel.reveal();
         } else {
-            this.panel = vscode.window.createWebviewPanel("cxk", "蔡徐坤", vscode.ViewColumn.Two, {
+            this.panel = vscode.window.createWebviewPanel("xz", "肖战", vscode.ViewColumn.Two, {
                 enableScripts: true,
                 retainContextWhenHidden: true,
             });
@@ -21,10 +21,10 @@ export class ReminderView {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蔡徐坤</title>
+    <title>肖战</title>
 </head>
 <body>
-    <div><h1>小哥哥~ 代码写久了，该休息啦~ 鸡你太美~</h1></div>
+    <div><h1>小姐姐~ 代码写久了，该休息啦~ </h1></div>
     <div><img src="${imagePath}"></div>
 </body>
 </html>`;

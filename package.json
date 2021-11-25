@@ -1,10 +1,10 @@
 {
-    "name": "cxk",
-    "displayName": "坤坤鼓励师",
-    "description": "写代码不再孤单，有蔡徐坤与你同在，鸡你太美~",
+    "name": "xz",
+    "displayName": "肖战鼓励师",
+    "description": "写代码不再孤单，有肖战与你同在",
     "version": "0.0.1",
-    "publisher": "sakura1357",
-    "icon": "logo.png",
+    "publisher": "ldtxhh",
+    "icon": "logo.jpg",
     "engines": {
         "vscode": "^1.30.0"
     },
@@ -12,43 +12,38 @@
         "Other"
     ],
     "keywords": [
-        "蔡徐坤",
-        "提醒",
-        "鸡你太美"
+        "肖战",
+        "提醒"
     ],
-    "bugs": {
-        "url": "https://github.com/sakura1357/vscode-cxk/issues",
-        "email": "xzt1357@gmail.com"
-    },
-    "homepage": "https://github.com/sakura1357/vscode-cxk",
+    "homepage": "https://github.com/ldtxhh/vscode-xz",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sakura1357/vscode-cxk.git"
+        "url": "https://github.com/ldtxhh/vscode-xz.git"
     },
     "activationEvents": [
-        "onCommand:cxk.showReminderView",
-        "onCommand:cxk.setReminderView",
+        "onCommand:xz.showReminderView",
+        "onCommand:xz.setReminderView",
         "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "cxk.showReminderView",
+                "command": "xz.showReminderView",
                 "title": "打开默认提醒窗口",
-                "category": "cxk"
+                "category": "xz"
             },
             {
-                "command": "cxk.setReminderView",
-                "title": "内置11张GIF图，随机替换并展示",
-                "category": "cxk"
+                "command": "xz.setReminderView",
+                "title": "随机替换并展示",
+                "category": "xz"
             }
         ],
         "configuration": {
             "type": "object",
-            "title": "蔡徐坤",
+            "title": "肖战",
             "properties": {
-                "cxk.reminderViewIntervalInMinutes": {
+                "xz.reminderViewIntervalInMinutes": {
                     "type": "number",
                     "default": 60,
                     "description": "展示提醒页面的时间间隔（分钟）"
